@@ -1,10 +1,19 @@
 object HelloWorld {
   def main(args: Array[String]) {
-    println("Hello, world 4!")
-    val list = List(1, -2, -3, 4).map(x => Math.abs(x))
-    val list2 = List(1, 2, 3, 4).reduce((x,y) => x*y)
-    println(list)
-    println(list2)
-    println(list2)
+    val x = 0
+    def f(y: Int) = y + 1
+
+    val result = {
+      val x = f(3)
+      println(x)
+      x * x
+    } + x
+
+    println(x)
+    println(result)
+  }
+
+  def plus(left: Int, right: Int): Int = {
+    left + right
   }
 }
