@@ -9,8 +9,6 @@ object HelloWorld {
       x * x
     } + x
 
-    println(x)
-    println(result)
   }
 
   def plus(left: Int, right: Int): Int = {
