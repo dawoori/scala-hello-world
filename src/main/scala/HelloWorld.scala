@@ -1,14 +1,19 @@
 object HelloWorld {
   def main(args: Array[String]) {
-    val x = 0
-    def f(y: Int) = y + 1
+    val list = List(1, 2, 3, 4, 5)
+    val list2 = List(2, 3, 5, 7)
 
-    val result = {
-      val x = f(3)
-      println(x)
-      x * x
-    } + x
+    println(list.take(2))
 
+    val newList = list.reduce((i, j) => Math.max(i, j))
+
+    println(list)
+    println(newList)
+
+    val filteredList = list.filter(i => i > 2)
+
+    println(list)
+    println(filteredList)
   }
 
   def plus(left: Int, right: Int): Int = {
